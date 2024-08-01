@@ -2,18 +2,22 @@
 ## Desafio : Analista de Qualidade de Software Júnior (Beedoo 2024)
 
 
-### Descrição do desafio:
-- [LINK 1](https://complex-night-ddb.notion.site/Desafio-Analista-de-Qualidade-de-Software-J-nior-5cef7366f66b41e890aada4d3f47f36f)
+### O DESAFIO:
+#### [Descrição Completa do Desafio](https://complex-night-ddb.notion.site/Desafio-Analista-de-Qualidade-de-Software-J-nior-5cef7366f66b41e890aada4d3f47f36f)
 
-### Módulo testado:
-- [LINK 2](https://creative-sherbet-a51eac.netlify.app/)
-- <a href="https://creative-sherbet-a51eac.netlify.app/" target="_blank">LINK 2</a>
+### BEEDOO QA CHALENGE:
+#### [Página do Módulo de Cadastro de Cursos](https://creative-sherbet-a51eac.netlify.app/)
 
+### DOCUMENTAÇÃO:
+#### [Planilha de Detalhamento e Documentação dos Testes](https://www.google.com.br/)
 
-### Planilha de testes:
-- [LINK 2](https://creative-sherbet-a51eac.netlify.app/) {:target="_blank"} 
+### RELATÓRIO:
+#### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://www.google.com.br/)
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
+Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Chalenge utilizando a linguaguem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
+
+
 
 ```
 @cadastro-curso
