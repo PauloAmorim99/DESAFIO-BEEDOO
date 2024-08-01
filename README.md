@@ -15,7 +15,10 @@
 #### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://www.google.com.br/)
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
+
 Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Chalenge utilizando a linguaguem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
+
+Nesse momento, vamos dividir os casos de teste em duas etapas, sendo a primeira os casos de teste relativos ao **Cadastro de Curso** :
 
 
 
@@ -51,7 +54,7 @@ CENÁRIO: Cadastro válido
 
 ```
 @cadastro-curso-online-valido
-CENÁRIO: Cadastro válido
+CENÁRIO: Cadastro válido do curso online
   E ele acessa a página Cadastrar Curso
   E ele preenche o formulário com dados válidos
   E ele seleciona no campo de opções Tipo de curso Online
@@ -64,7 +67,7 @@ CENÁRIO: Cadastro válido
 
  ```
 @cadastro-curso-presencial-valido
-CENÁRIO: Cadastro válido
+CENÁRIO: Cadastro válido do curso presencial
   E ele acessa a página Cadastrar Curso
   E ele preenche o formulário com dados válidos
   E ele seleciona no campo de opções Tipo de curso Presencial
@@ -74,3 +77,26 @@ CENÁRIO: Cadastro válido
   E uma mensagem de aviso de curso cadastrado deverá ser exibida
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
+
+```
+@cadastro-curso-inválido-campo-vazio
+CENÁRIO: Cadastro inválido por campo vazio
+  E ele acessa a página Cadastrar Curso
+  E ele preenche os campos com dados válidos 
+  E ele deixa de preencher algum ou alguns dos campos 
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO uma mensagem de aviso de curso não cadastrado
+  E uma mensagem de aviso indicando os campos não preenchidos deverá ser exibida
+```
+
+```
+@cadastro-curso-inválido-url-imagen
+CENÁRIO: Cadastro válido por url da imagem inválida
+  E ele acessa a página Cadastrar Curso
+  E ele preenche os campos com dados válidos
+  E ele preenche o campo Url da imagem de capa com um link inválido
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO uma mensagem de aviso de curso não cadastrado deverá ser exibida
+  E uma mensagem de aviso indicando que o campo Url da imagem de capa não possui um link válido deverá ser exibida
+```
+
