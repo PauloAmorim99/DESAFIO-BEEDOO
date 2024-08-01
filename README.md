@@ -23,8 +23,9 @@ FUNCIONALIDADE: Cadastro de um curso
 CONTEXTO:
   DADO que "Paulo" está na página Listar Cursos
 ```
+
 ```
-@cadastro-curso-online-valido
+@cadastro-curso-BASE
 CENÁRIO: Cadastro válido
   E ele acessa a página Cadastrar Curso
   E ele preenche o campo Nome do curso com um texto válido
@@ -41,8 +42,9 @@ CENÁRIO: Cadastro válido
   E uma mensagem de aviso de curso cadastrado deverá ser exibida
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
+
 ```
-@cadastro-curso-online-valido-v2
+@cadastro-curso-online-valido
 CENÁRIO: Cadastro válido
   E ele acessa a página Cadastrar Curso
   E ele preenche o formulário com dados válidos
@@ -53,24 +55,7 @@ CENÁRIO: Cadastro válido
   E uma mensagem de aviso de curso cadastrado deverá ser exibida
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
-```
-@cadastro-curso-presencial-valido
-CENÁRIO: Cadastro válido
-  E ele acessa a página Cadastrar Curso
-  E ele preenche o campo Nome do curso com um texto válido
-  E ele preenche o campo Descrição do curso com um texto válido
-  E ele preenche o campo Instrutor com um texto válido
-  E ele preenche o campo Url da imagem com um link válido
-  E ele preenche o campo Data de inicio com uma data válida
-  E ele preenche o campo Data de fim com uma data válida
-  E ele preenche o campo Número de vagas com um número válido
-  E ele seleciona no campo de opções Tipo de curso Presencial
-  E ele preenche o campo Endereço com um texto válido
-  QUANDO ele aciona o botão Cadastrar curso
-  ENTÃO ele deve ser redirecionado para a página Listar Cursos
-  E uma mensagem de aviso de curso cadastrado deverá ser exibida
-  E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
-```
+
  ```
 @cadastro-curso-presencial-valido
 CENÁRIO: Cadastro válido
