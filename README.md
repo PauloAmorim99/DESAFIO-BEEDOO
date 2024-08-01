@@ -7,9 +7,11 @@
 
 ### Módulo testado:
 - [LINK 2](https://creative-sherbet-a51eac.netlify.app/)
+- <a href="https://creative-sherbet-a51eac.netlify.app/" target="_blank">LINK 2</a>
+
 
 ### Planilha de testes:
-- [LINK 2](https://creative-sherbet-a51eac.netlify.app/){:target="_blank" rel="noopener"}
+- [LINK 2](https://creative-sherbet-a51eac.netlify.app/) {:target="_blank"} 
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
 
