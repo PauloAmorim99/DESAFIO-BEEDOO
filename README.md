@@ -33,6 +33,7 @@ CONTEXTO:
   DADO que "Paulo" está na página Listar Cursos
 ```
 
+descrição:
 ```
 @cadastro-curso-BASE
 CENÁRIO: Cadastro válido
@@ -52,6 +53,7 @@ CENÁRIO: Cadastro válido
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
 
+descrição:
 ```
 @cadastro-curso-online-valido
 CENÁRIO: Cadastro válido do curso online
@@ -65,7 +67,8 @@ CENÁRIO: Cadastro válido do curso online
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
 
- ```
+descrição:
+```
 @cadastro-curso-presencial-valido
 CENÁRIO: Cadastro válido do curso presencial
   E ele acessa a página Cadastrar Curso
@@ -78,6 +81,7 @@ CENÁRIO: Cadastro válido do curso presencial
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
 
+descrição:
 ```
 @cadastro-curso-inválido-campo-vazio
 CENÁRIO: Cadastro inválido por campo vazio
@@ -89,6 +93,7 @@ CENÁRIO: Cadastro inválido por campo vazio
   E uma mensagem de aviso indicando os campos não preenchidos deverá ser exibida
 ```
 
+descrição:
 ```
 @cadastro-curso-inválido-url-imagen
 CENÁRIO: Cadastro válido por url da imagem inválida
@@ -98,5 +103,17 @@ CENÁRIO: Cadastro válido por url da imagem inválida
   QUANDO ele aciona o botão Cadastrar curso
   ENTÃO uma mensagem de aviso de curso não cadastrado deverá ser exibida
   E uma mensagem de aviso indicando que o campo Url da imagem de capa não possui um link válido deverá ser exibida
+```
+
+descrição:
+```
+@cadastro-curso-inválido-datas
+CENÁRIO: Cadastro inválido por datas inválidas
+  E ele acessa a página Cadastrar Curso
+  E ele preenche os campos com dados válidos 
+  E ele preenche os campos com datas inválidas 
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO uma mensagem de aviso de curso não cadastrado
+  E uma mensagem de aviso indicando os campos de data de inicio ou/e data de fim não são válidos
 ```
 
