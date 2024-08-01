@@ -42,6 +42,18 @@ CENÁRIO: Cadastro válido
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
 ```
+@cadastro-curso-online-valido-v2
+CENÁRIO: Cadastro válido
+  E ele acessa a página Cadastrar Curso
+  E ele preenche o formulário com dados válidos
+  E ele seleciona no campo de opções Tipo de curso Online
+  E ele preenche o campo Link de inscrição com um link válido
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO ele deve ser redirecionado para a página Listar Cursos
+  E uma mensagem de aviso de curso cadastrado deverá ser exibida
+  E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
+```
+```
 @cadastro-curso-presencial-valido
 CENÁRIO: Cadastro válido
   E ele acessa a página Cadastrar Curso
@@ -59,4 +71,15 @@ CENÁRIO: Cadastro válido
   E uma mensagem de aviso de curso cadastrado deverá ser exibida
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
- 
+ ```
+@cadastro-curso-presencial-valido
+CENÁRIO: Cadastro válido
+  E ele acessa a página Cadastrar Curso
+  E ele preenche o formulário com dados válidos
+  E ele seleciona no campo de opções Tipo de curso Presencial
+  E ele preenche o campo Endereço com um texto válido
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO ele deve ser redirecionado para a página Listar Cursos
+  E uma mensagem de aviso de curso cadastrado deverá ser exibida
+  E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
+```
