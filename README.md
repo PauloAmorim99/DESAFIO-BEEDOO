@@ -10,3 +10,12 @@
 
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
+```
+@cadastro-curso
+FUNCIONALIDADE: Cadastro de um curso
+  Como um usuário do Beedoo QA Chalenge
+  Paulo quer cadastrar um novo curso
+  Para que esse curso fique disponível na lista de cursos
+
+CONTEXTO:
+```
