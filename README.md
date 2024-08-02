@@ -9,10 +9,10 @@
 #### [Página do Módulo de Cadastro de Cursos](https://creative-sherbet-a51eac.netlify.app/)
 
 ### DOCUMENTAÇÃO:
-#### [Planilha de Detalhamento e Documentação dos Testes](https://www.google.com.br/)
+#### [Planilha de Detalhamento e Documentação dos Testes]([https://www.google.com.br/](https://docs.google.com/spreadsheets/d/1AWwJzyA0ispSWnwgUwaSR9KUaRqrHIniWLfVfEPoPFA/edit?usp=sharing))
 
 ### RELATÓRIO:
-#### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://www.google.com.br/)
+#### [Problemas e Bugs Encontrados (+sugestões de melhorias)]([https://www.google.com.br/](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing))
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
 
