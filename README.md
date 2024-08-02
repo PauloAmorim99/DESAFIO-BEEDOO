@@ -78,6 +78,18 @@ CENÁRIO: Cadastro inválido por campo vazio
   E uma mensagem de aviso indicando os campos não preenchidos deverá ser exibida
 ```
 
+Nesse cenário, vamos considerar que o usuário preenche o formulário de cadastro  com **dados chave que já existem**, como nome do curso, descrição e link de inscrição:
+```
+@cadastro-curso-ja-cadastrado
+
+CENÁRIO: Curso já cadastrado
+  E ele acessa a página Cadastrar Curso
+  E ele preenche um campo chave com informações já armazenadas no banco de dados  
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO uma mensagem solicitando a confirmação de cadastro de curso pois alguns campos possuem informações já cadastradas anteriormente
+  E uma mensagem de aviso indicando os campos correspondentes aos dados já cadastrados anteriormente deverá ser exibida
+```
+
 Nesse cenário, vamos considerar que o usuário preencheu o formulário com informações válidos, porém o campo **Url da imagem de capa** foi preenchido com uma informação **inválida** (ex.: um texto qualquer ou um link que não remeta a uma imagem):
 ```
 @cadastro-curso-invalido-url-imagem
