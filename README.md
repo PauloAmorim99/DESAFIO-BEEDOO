@@ -151,16 +151,16 @@ FUNCIONALIDADE: Listagem de curso
 
   Como um usuário do Beedoo QA Challenge
   "Paulo" quer listar os cursos cadastrados
-  Para que possa organizar, filtrar, visualisar e gerenciar esses cursos
+  Para que possa organizar, filtrar, visualizar e gerenciar esses cursos
 
 CONTEXTO:
   DADO que "Paulo" está na página Listar Cursos
   E que "Paulo" tem poder de administrador
 ```
 
-Nesse cenário, vamos considerar que o usuário está diante da página da lista de cursos cadastrados, e deseja **visualizar mais informações** a respeito dos cursos cadastrados que se aprensentam em card:
+Nesse cenário, vamos considerar que o usuário está diante da página da lista de cursos cadastrados, e deseja **visualizar mais informações** a respeito dos cursos cadastrados que se apresentam em card:
 ```
-@listar-curso-visualisar-cadastrado
+@listar-curso-visualizar-cadastrado
 
 CENÁRIO: Visualizar curso cadastrado
   E ele acessa a página Listar Cursos
@@ -169,7 +169,7 @@ CENÁRIO: Visualizar curso cadastrado
   ENTÃO ele deve ter um retorno na tela em pop-up contendo as informações completas cadastradas sobre esse curso
   E uma opção de edição é apresentada nesse retorno
   E uma opção de exclusão é apresentada nesse retorno
-  E uma opção de suspenção é apresentada nesse retorno
+  E uma opção de suspensão é apresentada nesse retorno
   E uma opção para minimizar esse retorno ou retornar para a tela inicial é apresentada
 ```
 
