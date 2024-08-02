@@ -17,7 +17,7 @@ descrever oq é o desafio e porque eu estou participando dele.
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Challenge)
 
-Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Challenge utilizando a linguaguem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
+Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Challenge utilizando a linguagem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
 
 Nesse momento, vamos dividir os casos de teste em duas etapas, pois serão analisadas **duas funcionalidades** do módulo, sendo a primeira os casos de teste relativos ao **Cadastro de Curso** :
 
