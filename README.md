@@ -79,7 +79,7 @@ CENÁRIO: Cadastro inválido por campo vazio
 
 Nesse cenário, vamos considerar que o usuário preencheu o formulário com informações válidos, porém o campo **Url da imagem de capa** foi preenchido com uma informação **inválida** (ex.: um texto qualquer ou um link que não remeta a uma imagem):
 ```
-@cadastro-curso-invalido-url-imagen
+@cadastro-curso-invalido-url-imagem
 
 CENÁRIO: Cadastro válido por url da imagem inválida
   E ele acessa a página Cadastrar Curso
@@ -145,7 +145,7 @@ CONTEXTO:
   E que "Paulo" tem poder de administrador
 ```
 
-descrição:
+Nesse cenário, vamos considerar que o usuário está diante da página da lista de cursos cadastrados, e deseja **visualizar mais informações** a respeito dos cursos cadastrados que se aprensentam em card:
 ```
 @listar-curso-visualisar-cadastrado
 
@@ -157,6 +157,19 @@ CENÁRIO: Visualizar curso cadastrado
   E uma opção de edição é apresentada nesse retorno
   E uma opção de exclusão é apresentada nesse retorno
   E uma opção de suspenção é apresentada nesse retorno
+  E uma opção para minimizar esse retorno ou retornar para a tela inicial é apresentada
 ```
 
+Nesse cenário, vamos considerar que o usuário está diante da página da lista de cursos cadastrados, e deseja **excluir um curso cadastrada** a partir do card:
+```
+@listar-curso-excluir
 
+CENÁRIO: Excluir curso cadastrado
+  E ele acessa a página Listar Cursos
+  E ele escolhe um dos cursos cadastrados
+  QUANDO ele clica sobre o botão Excluir curso no card do curso cadastrado
+  ENTÃO ele deve ter um retorno solicitando uma confirmação se a exclusão é mesmo desejada
+  E caso confirme o curso deverá ser apagado da página
+  E o usuário deve ser redirecionado para a página Lista de cursos atualizada
+  E um retorno dando a opção de desfazer a exclusão deve ser exibido na tela por alguns segundos
+```
