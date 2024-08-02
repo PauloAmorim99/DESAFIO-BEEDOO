@@ -1,19 +1,19 @@
-# DESAFIO-BEEDOO
-## Desafio : Analista de Qualidade de Software Júnior (Beedoo 2024)
+## DESAFIO-BEEDOO
+### Desafio : Analista de Qualidade de Software Júnior (Beedoo 2024)
 
 descrever oq é o desafio e porque eu estou participando dele.
 
-### O DESAFIO:
-#### [Descrição Completa do Desafio](https://complex-night-ddb.notion.site/Desafio-Analista-de-Qualidade-de-Software-J-nior-5cef7366f66b41e890aada4d3f47f36f)
+#### O DESAFIO:
+##### [Descrição Completa do Desafio](https://complex-night-ddb.notion.site/Desafio-Analista-de-Qualidade-de-Software-J-nior-5cef7366f66b41e890aada4d3f47f36f)
 
-### BEEDOO QA CHALLENGE:
-#### [Página do Módulo de Cadastro de Cursos](https://creative-sherbet-a51eac.netlify.app/)
+#### BEEDOO QA CHALLENGE:
+##### [Página do Módulo de Cadastro de Cursos](https://creative-sherbet-a51eac.netlify.app/)
 
-### DOCUMENTAÇÃO:
-#### [Planilha de Detalhamento e Documentação dos Testes](https://docs.google.com/spreadsheets/d/1AWwJzyA0ispSWnwgUwaSR9KUaRqrHIniWLfVfEPoPFA/edit?usp=sharing)
+#### DOCUMENTAÇÃO:
+##### [Planilha de Detalhamento e Documentação dos Testes](https://docs.google.com/spreadsheets/d/1AWwJzyA0ispSWnwgUwaSR9KUaRqrHIniWLfVfEPoPFA/edit?usp=sharing)
 
-### RELATÓRIO:
-#### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing)
+#### RELATÓRIO:
+##### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing)
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Challenge)
 
