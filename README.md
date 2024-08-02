@@ -143,7 +143,7 @@ CENÁRIO: Cadastro válido do curso online
   E uma mensagem de aviso indicando que o campo Link de inscrição não é válido
 ```
 
-Agora, vamos analisar a segunda funcionalidadedo módulo, sendo os casos de teste relativos a **Listar Cursos** :
+Agora, vamos analisar a segunda funcionalidade do módulo, sendo os casos de teste relativos a **Listar Cursos** :
 
 ```
 @listar-cursos
