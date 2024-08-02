@@ -5,7 +5,7 @@
 ### O DESAFIO:
 #### [Descrição Completa do Desafio](https://complex-night-ddb.notion.site/Desafio-Analista-de-Qualidade-de-Software-J-nior-5cef7366f66b41e890aada4d3f47f36f)
 
-### BEEDOO QA CHALENGE:
+### BEEDOO QA CHALLENGE:
 #### [Página do Módulo de Cadastro de Cursos](https://creative-sherbet-a51eac.netlify.app/)
 
 ### DOCUMENTAÇÃO:
@@ -14,9 +14,9 @@
 ### RELATÓRIO:
 #### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing)
   
-## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
+## User Story : Cadastro e Listagem de Cursos (Beedoo QA Challenge)
 
-Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Chalenge utilizando a linguaguem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
+Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Challenge utilizando a linguaguem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
 
 Nesse momento, vamos dividir os casos de teste em duas etapas, pois serão analisadas **duas funcionalidades** do módulo, sendo a primeira os casos de teste relativos ao **Cadastro de Curso** :
 
@@ -25,7 +25,7 @@ Nesse momento, vamos dividir os casos de teste em duas etapas, pois serão anali
 @cadastro-curso
 
 FUNCIONALIDADE: Cadastro de um curso
-  Como um usuário do Beedoo QA Chalenge
+  Como um usuário do Beedoo QA Challenge
   "Paulo" quer cadastrar um novo curso
   Para que esse curso fique disponível na lista de cursos
 
@@ -136,7 +136,7 @@ Agora, vamos analisar a segunda funcionalidadedo módulo, sendo os casos de test
 @listar-cursos
 FUNCIONALIDADE: Listagem de curso
 
-  Como um usuário do Beedoo QA Chalenge
+  Como um usuário do Beedoo QA Challenge
   "Paulo" quer listar os cursos cadastrados
   Para que possa organizar, filtrar, visualisar e gerenciar esses cursos
 
