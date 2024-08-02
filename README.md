@@ -9,21 +9,21 @@
 #### [Página do Módulo de Cadastro de Cursos](https://creative-sherbet-a51eac.netlify.app/)
 
 ### DOCUMENTAÇÃO:
-#### [Planilha de Detalhamento e Documentação dos Testes]([https://www.google.com.br/](https://docs.google.com/spreadsheets/d/1AWwJzyA0ispSWnwgUwaSR9KUaRqrHIniWLfVfEPoPFA/edit?usp=sharing))
+#### [Planilha de Detalhamento e Documentação dos Testes](https://docs.google.com/spreadsheets/d/1AWwJzyA0ispSWnwgUwaSR9KUaRqrHIniWLfVfEPoPFA/edit?usp=sharing)
 
 ### RELATÓRIO:
-#### [Problemas e Bugs Encontrados (+sugestões de melhorias)]([https://www.google.com.br/](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing))
+#### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing)
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Chalenge)
 
 Os casos de teste a seguir foram desenvolvidos a partir do módulo de curso no Beedoo QA Chalenge utilizando a linguaguem **Gherkin**. Neste módulo a ser testado, ao menos em teoria, o usuário "Paulo" pode criar, excluir e listar os cursos. 
 
-Nesse momento, vamos dividir os casos de teste em duas etapas, sendo a primeira os casos de teste relativos ao **Cadastro de Curso** :
-
+Nesse momento, vamos dividir os casos de teste em duas etapas, pois serão analisadas **duas funcionalidades** do módulo, sendo a primeira os casos de teste relativos ao **Cadastro de Curso** :
 
 
 ```
 @cadastro-curso
+
 FUNCIONALIDADE: Cadastro de um curso
   Como um usuário do Beedoo QA Chalenge
   "Paulo" quer cadastrar um novo curso
@@ -31,31 +31,13 @@ FUNCIONALIDADE: Cadastro de um curso
 
 CONTEXTO:
   DADO que "Paulo" está na página Listar Cursos
+  E que "Paulo" tem poder de administrador
 ```
 
-descrição:
-```
-@cadastro-curso-BASE
-CENÁRIO: Cadastro válido
-  E ele acessa a página Cadastrar Curso
-  E ele preenche o campo Nome do curso com um texto válido
-  E ele preenche o campo Descrição do curso com um texto válido
-  E ele preenche o campo Instrutor com um texto válido
-  E ele preenche o campo Url da imagem com um link válido
-  E ele preenche o campo Data de inicio com uma data válida
-  E ele preenche o campo Data de fim com uma data válida
-  E ele preenche o campo Número de vagas com um número válido
-  E ele seleciona no campo de opções Tipo de curso Online
-  E ele preenche o campo Link de inscrição com um link válido
-  QUANDO ele aciona o botão Cadastrar curso
-  ENTÃO ele deve ser redirecionado para a página Listar Cursos
-  E uma mensagem de aviso de curso cadastrado deverá ser exibida
-  E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
-```
-
-descrição:
+Nesse cenário, vamos considerar que o usuário preenche todo o formulário de cadastro com **informações válidas**, selecionando a opção **online** no tipo de curso:
 ```
 @cadastro-curso-online-valido
+
 CENÁRIO: Cadastro válido do curso online
   E ele acessa a página Cadastrar Curso
   E ele preenche o formulário com dados válidos
@@ -67,9 +49,10 @@ CENÁRIO: Cadastro válido do curso online
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
 
-descrição:
+Nesse outro cenário, vamos considerar que o usuário preenche todo o formulário de cadastro com **informações válidas**, selecionando a opção **presencial** no tipo de curso:
 ```
 @cadastro-curso-presencial-valido
+
 CENÁRIO: Cadastro válido do curso presencial
   E ele acessa a página Cadastrar Curso
   E ele preenche o formulário com dados válidos
@@ -81,9 +64,10 @@ CENÁRIO: Cadastro válido do curso presencial
   E o curso deve ser cadastrado e aparecer na página  Listar de Cursos
 ```
 
-descrição:
+Nesse cenário, vamos considerar que o usuário preenche parte do formulário de cadastro e deixa algum ou alguns **campos sem preenchimento**:
 ```
-@cadastro-curso-inválido-campo-vazio
+@cadastro-curso-invalido-campo-vazio
+
 CENÁRIO: Cadastro inválido por campo vazio
   E ele acessa a página Cadastrar Curso
   E ele preenche os campos com dados válidos 
@@ -93,9 +77,10 @@ CENÁRIO: Cadastro inválido por campo vazio
   E uma mensagem de aviso indicando os campos não preenchidos deverá ser exibida
 ```
 
-descrição:
+Nesse cenário, vamos considerar que o usuário preencheu o formulário com informações válidos, porém o campo **Url da imagem de capa** foi preenchido com uma informação **inválida** (ex.: um texto qualquer ou um link que não remeta a uma imagem):
 ```
-@cadastro-curso-inválido-url-imagen
+@cadastro-curso-invalido-url-imagen
+
 CENÁRIO: Cadastro válido por url da imagem inválida
   E ele acessa a página Cadastrar Curso
   E ele preenche os campos com dados válidos
@@ -105,9 +90,10 @@ CENÁRIO: Cadastro válido por url da imagem inválida
   E uma mensagem de aviso indicando que o campo Url da imagem de capa não possui um link válido deverá ser exibida
 ```
 
-descrição:
+Nesse cenário, vamos considerar que o usuário preencheu o formulário com informações válidas, porém os campos **Data de inicio** e/ou **Data de fim** foram preenchidos com informações **inválidas** (ex.: data de inicio posterior a data de fim; data de inicio ou fim anterior a data do cadastro):
 ```
-@cadastro-curso-inválido-datas
+@cadastro-curso-invalido-datas
+
 CENÁRIO: Cadastro inválido por datas inválidas
   E ele acessa a página Cadastrar Curso
   E ele preenche os campos com dados válidos 
@@ -116,4 +102,61 @@ CENÁRIO: Cadastro inválido por datas inválidas
   ENTÃO uma mensagem de aviso de curso não cadastrado
   E uma mensagem de aviso indicando os campos de data de inicio ou/e data de fim não são válidos
 ```
+
+Nesse cenário, vamos considerar que o usuário preencheu o formulário com informações válidas, porém o campo **Número de vagas** foi preenchido com uma informação **inválida** (ex.:número de vagas extremamente extenso e irreal; caracteres especiais e/ou letras):
+```
+@cadastro-curso-invalido-vagas
+
+CENÁRIO: Cadastro inválido por vagas inválidas
+  E ele acessa a página Cadastrar Curso
+  E ele preenche os campos com dados válidos 
+  E ele preenche o campo numeros de vagas com um numéro inválido
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO uma mensagem de aviso de curso não cadastrado
+  E uma mensagem de aviso indicando que o campos de Numero de vagas não é válido
+```
+
+Nesse cenário, vamos considerar que o usuário preencheu o formulário com informações válidas, porém o campo **Link de inscrição** foi preenchido com uma informação **inválida** (ex.:um texto qualquer; um numero; uma frase; etc):
+```
+@cadastro-curso-invalido-online
+
+CENÁRIO: Cadastro válido do curso online
+  E ele acessa a página Cadastrar Curso
+  E ele preenche o formulário com dados válidos
+  E ele seleciona no campo de opções Tipo de curso Online
+  E ele preenche o campo Link de inscrição com um link inválido
+  QUANDO ele aciona o botão Cadastrar curso
+  ENTÃO uma mensagem de aviso de curso não cadastrado
+  E uma mensagem de aviso indicando que o campo Link de inscrição não é válido
+```
+
+Agora, vamos analisar a segunda funcionalidadedo módulo, sendo os casos de teste relativos a **Listar Cursos** :
+
+```
+@listar-cursos
+FUNCIONALIDADE: Listagem de curso
+
+  Como um usuário do Beedoo QA Chalenge
+  "Paulo" quer listar os cursos cadastrados
+  Para que possa organizar, filtrar, visualisar e gerenciar esses cursos
+
+CONTEXTO:
+  DADO que "Paulo" está na página Listar Cursos
+  E que "Paulo" tem poder de administrador
+```
+
+descrição:
+```
+@listar-curso-visualisar-cadastrado
+
+CENÁRIO: Visualizar curso cadastrado
+  E ele acessa a página Listar Cursos
+  E ele escolhe um dos cursos cadastrados
+  QUANDO ele clica sobre o card do curso cadastrado
+  ENTÃO ele deve ter um retorno na tela em pop-up contendo as informações completas cadastradas sobre esse curso
+  E uma opção de edição é apresentada nesse retorno
+  E uma opção de exclusão é apresentada nesse retorno
+  E uma opção de suspenção é apresentada nesse retorno
+```
+
 
