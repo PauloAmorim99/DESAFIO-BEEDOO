@@ -1,7 +1,7 @@
 ## DESAFIO-BEEDOO
 ### Desafio : Analista de Qualidade de Software Júnior (Beedoo 2024)
 
-descrever oq é o desafio e porque eu estou participando dele.
+O objetivo do Desafio Beedoo é desafiar o conhecimento e habilidade no teste de softwares.
 
 #### O DESAFIO:
 ##### [Descrição Completa do Desafio](https://complex-night-ddb.notion.site/Desafio-Analista-de-Qualidade-de-Software-J-nior-5cef7366f66b41e890aada4d3f47f36f)
