@@ -142,6 +142,17 @@ CENÁRIO: Cadastro válido do curso online
   ENTÃO uma mensagem de aviso de curso não cadastrado
   E uma mensagem de aviso indicando que o campo Link de inscrição não é válido
 ```
+Nesse cenário, vamos considerar que o usuário acessou a página cadastro e por algum motivo (ex:desconexão) precisou ou foi obrigado a **recarregar a página**:
+```
+@atualizar-página-cadastro
+
+CENÁRIO: Atualizar página de cadastro
+  E ele acessa a página Cadastrar Curso
+  E atualiza a página
+  QUANDO ele clica sobre o botão recarregar esta página no navegador
+  ENTÃO ele deve acesso ao formulário de cadastro sem nenhum preenchimento novamente
+
+```
 
 Agora, vamos analisar a segunda funcionalidade do módulo, sendo os casos de teste relativos a **Listar Cursos** :
 
