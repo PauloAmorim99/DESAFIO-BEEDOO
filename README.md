@@ -12,8 +12,9 @@ O objetivo do Desafio Beedoo é desafiar o conhecimento e habilidade no teste de
 #### DOCUMENTAÇÃO:
 ##### [Planilha de Detalhamento e Documentação dos Testes](https://docs.google.com/spreadsheets/d/1AWwJzyA0ispSWnwgUwaSR9KUaRqrHIniWLfVfEPoPFA/edit?usp=sharing)
 
-#### RELATÓRIO:
-##### [Problemas e Bugs Encontrados (+sugestões de melhorias)](https://docs.google.com/document/d/1X_5GqcO1nqk6s_dMu2F1lu72Q273DV0ngrezRmOqNOE/edit?usp=sharing)
+#### EVIDÊNCIAS:
+##### [Vídeos dos testes](https://drive.google.com/drive/folders/1_xvLmMhi40HNvduvFldvoGuWkVfUFMkb?usp=sharing)
+
   
 ## User Story : Cadastro e Listagem de Cursos (Beedoo QA Challenge)
 
